@@ -39,6 +39,9 @@ body {
     top: 0;
     left: 0;
   }
+  p {
+    font-size: 10pxs;
+  }
 }
 canvas {
   background: #141518;
@@ -828,7 +831,7 @@ body.offcanvas .colorlib-nav-toggle {
   display: block;
   width: 40px;
   height: 40px;
-  background: #463dff;
+  background: #675fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -879,11 +882,9 @@ body.offcanvas .colorlib-nav-toggle {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position: relative;
-  background-image: linear-gradient(
-    var(--rotate)
-    , #4281ffb9, #4b3de497);
-  animation: spin 10.5s linear infinite;  border-radius: 5px;
+  background-image: linear-gradient( var(--rotate) , #4281ff57, #8c82ff00);
   padding: 1.5em;
+  border-radius: 10px;
   margin-left: 60px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -945,7 +946,8 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .card {
-  background: #191c29;
+  border: 1px solid white;
+  background-image: linear-gradient( var(--rotate) , #4281ff57, #8c82ff00);
   width: var(--card-width);
   height: var(--card-height);
   padding: 3px;
@@ -972,14 +974,10 @@ body.offcanvas .colorlib-nav-toggle {
   width: 104%;
   height: 102%;
   border-radius: 8px;
-  background-image: linear-gradient(
-    var(--rotate)
-    , #5ddcff, #3c67e3 43%, #4e00c2);
   position: absolute;
   z-index: -1;
   top: -1%;
   left: -2%;
-  animation: spin 2.5s linear infinite;
 }
 
 .card::after {
@@ -994,10 +992,6 @@ body.offcanvas .colorlib-nav-toggle {
   margin: 0 auto;
   transform: scale(0.8);
   filter: blur(calc(var(--card-height) / 6));
-  background-image: linear-gradient(
-    var(--rotate)
-    , #5ddcff, #3c67e3 43%, #4e00c2);
-  animation: spin 10.5s linear infinite;
 }
 
 @keyframes spin {
